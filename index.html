@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- START - FACEBOOK META -->
+    <meta property="og:url" content="https://tudosobregestao.com.br/">
+    <meta property="og:title" content="Tudo Sobre Gestão">
+    <meta property="og:site_name" content="Tudo Sobre Gestão">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:description"
+    content="A Tudo Sobre Gestão nasceu para melhorar o modo que as empresas gerenciam seus projetos.">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800"> <!-- PIXELS -->
+    <meta property="og:image:height" content="600"> <!-- PIXELS -->
+    <meta property="og:type" content="website">
+    <!-- END - FACEBOOK META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+    content="A Tudo Sobre Gestão nasceu para melhorar o modo que as empresas gerenciam seus projetos.">
+    <meta name="keywords"
+    content="Gerenciamento, dicas, Soluções, B2B, B2C, Planejamento, Profissional de Gestão, Gestão, Gestão de negócios">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css ">
+    <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i"
+    rel="stylesheet">
+
+    
+    <title>Tudo Sobre Gestão</title>
+</head>
+
+<body>
+    <header>
+        <div class="gridD">
+            <div class="logo">
+                <a href="#banner" class="anchor">
+                    <img src="assets/img/.png" alt="LOGO">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="anchor">Início</a></li>
+                    <li><a href="#about" class="anchor">Quem Somos</a></li>
+                    <li><a href="#contact" class="anchor">Materiais Educativos</a></li>
+                    <li><a href="#contact" class="anchor">Blog</a></li>
+                    <li><a href="#contact" class="anchor">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="btn-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section id="banner">
+            <div class="gridD">
+                <div class="content">
+                    <h1>Você se considera um bom gestor?</h1>
+                    <div class="perfis">
+                        <a href="#contact" class="anchor">Eu quero ser</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="intro">
+            <div class="gridD">
+                <div class="content">
+                    <div class="column">
+                        <div class="icon">
+                            <img src="assets/img/postit.png" alt="">
+                        </div>
+                        <h3>Lorem Ipsum<br>lorem ipsum</h3>
+                    </div>
+                    <div class="column">
+                        <div class="icon">
+                            <img src="assets/img/caderneta.png" alt="">
+                        </div>
+                        <h3>Lorem Ipsum<br>lorem ipsum</h3>
+                    </div>
+                    <div class="column">
+                        <div class="icon">
+                            <img src="assets/img/logo-footer.png" alt="">
+                        </div>
+                        <h3>Lorem Ipsum<br>lorem ipsum</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>Como ser um excelente
+                <br>Gestor?</h2>
+                <div class="gridF">
+                    <div class="text-about">    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ut voluptas quisquam asperiores dignissimos. Ipsa voluptatibus, quaerat nisi optio. Iure dolor debitis accusantium laborum ea adipisci distinctio eaque itaque blanditiis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam blanditiis nemo totam iste cum fugit unde sit ad pariatur facilis repellendus maiores modi est saepe eaque, ab, suscipit fugiat adipisci?.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, labore eveniet distinctio nostrum modi quaerat cupiditate, velit deserunt odio facere nam, doloribus reprehenderit laborum nulla voluptate deleniti quisquam! Porro, vero.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit assumenda, sunt dolores adipisci facilis!</p>
+                    </div>
+                    <div class="img-about"><img src="assets/img/medalha.png" alt="" width="300"></div>
+
+                    
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Vamos te ajudar!</h2>
+                <div class="gridF">
+                    <div class="text-contact">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius exercitationem fugit praesentium optio, facilis consequuntur! Culpa quis alias odit nihil, hic libero. Officiis recusandae saepe quidem optio, nostrum suscipit doloribus!.</p>
+                    </div>
+                </div>
+
+
+                <section id="formulario">
+                    <div class="gridD">
+                        <form id="form" class="topBefore" onsubmit="formController.add(event)">
+                            <div id="successView"></div>
+                            <!-- <h2>Assine nossa Newsletter</h2> -->
+                            <input id="name" type="text" placeholder="Nome Completo" pattern="(.*)\s(.*)"
+                            oninvalid="this.setCustomValidity('Favor Inserir Nome Completo')"
+                            oninput="setCustomValidity('')" autocomplete='name' required>
+                            <input id="email" type="email" placeholder="E-mail" pattern="(.*)+@(.*)+\.(.*)"
+                            oninvalid="this.setCustomValidity('Favor Inserir Email no formato nome@dominio.exemplo')"
+                            oninput="setCustomValidity('')" autocomplete='email' required>
+                            <input class="action-button" id="submit" type="submit" value="ENVIAR">
+                        </form> 
+
+                        <div class="msg">
+                            <p>Obrigado por se cadastrar!!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- END -FOCO -->
+        </main>
+        <!-- END - MAIN -->
+        <!-- START - FOOTER -->
+        <footer>
+            <div class="gridD">
+                <h3>Acompanhe nossas redes sociais:</h3>
+                <div class="links">
+                    <a href="" target="_blank"><img
+                    src="assets/img/icons/facebook.png" alt="Facebook" width="50px"</a>
+                    <a href="" target="_blank"><img
+                    src="assets/img/icons/linkedin.png" alt="Linkedin" width="50px"</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="assets/js/app/models/Form.js"></script>
+        <script src="assets/js/app/controllers/FormController.js"></script>
+        <script src="assets/js/app/models/FormList.js"></script>
+        <script src="assets/js/app/index.js"></script>
+        <script>
+            let formController = new FormController();
+        </script>
+    </body>
+
+    </html>
