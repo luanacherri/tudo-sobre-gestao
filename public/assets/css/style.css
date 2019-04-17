@@ -187,7 +187,7 @@ body header .gridD {
 
 body header .logo img {
     display: block;
-    max-height: 50px;
+    max-height: 150px;
     width: auto
 }
 
@@ -305,7 +305,7 @@ body header .btn-mobile.active span:last-child {
 }
 
 body #banner {
-    height: 600px;
+    height: 400px;
     background: url(../img/banner.jpg) center center no-repeat;
     margin-top: 80px
 }
@@ -1190,3 +1190,27 @@ body footer img {
     margin-right: 10px;
     margin-left: 10px
 }
+
+/*------------------------------NOVO LAYOUT ---------------*/ 
+/*card*/ 
+body #card {
+    color: #ffffff);
+    padding: 20px 50px;
+    margin: 100px 100px;
+    font: normal 600 20px / 37px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
+    display: block;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  body #banner2 {
+    height: 200px;
+    background: url(../img/banner.jpg) center center no-repeat;
+    
+}
+
+ 
