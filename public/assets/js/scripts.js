@@ -23,6 +23,7 @@ function saveLeads(name, email, date, ip, type) {
  *
  */
 form = document.getElementById('form-leads');
+var btnpdf = document.getElementById('pdf-download');
 form.addEventListener('submit', function(e) {
 	e.preventDefault();
 	var name = form.querySelector('[name="name"]').value,
@@ -40,6 +41,10 @@ form.addEventListener('submit', function(e) {
 
 	saveLeads(name, email, date, ip, type);
 
+	btnpdf.innerHTML= "<a href='assets/download/Tudo-sobre-gestão.pdf' download><p style='font-size: 16px;'><img src='assets/img/downloadoff.png' alt='' style='width: 50px; vertical-align: middle; margin-right: 10px;'/> <br>Baixe seu e-book</p></a>";
+
 	form.parentNode.parentNode.classList.add('obrigado');
+
+
 
 })
