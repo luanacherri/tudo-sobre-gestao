@@ -132,13 +132,6 @@ body #about::after {
     }
 }
 
-body {
-	-webkit-font-smoothing:antialiased;
-    font-smoothing:antialiased;
-    display: block;
-    font: normal 500 16px / 27px "Roboto", Helvetica, Arial, Verdana, sans-serif;
-}
-
 body.menu-sticky header {
     position: fixed
 }
@@ -150,11 +143,7 @@ body a {
 body header {
     height: 120px;
     background: #fff;
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0
+    position: relative;
 }
 
 body header .gridD {
@@ -305,130 +294,15 @@ body header .btn-mobile.active span:last-child {
 }
 
 body #banner {
-    height: 400px;
+    height: 500px;
     background: url(../img/banner.jpg) center center no-repeat;
-    margin-top: 80px
+    padding: 0;
 }
 
 @media(max-width:992px) {
     body header .logo img {
         max-height: 50px
     }
-    body #banner {
-        height: 500px
-    }
-}
-
-body #banner .gridD {
-    height: 100%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
-    -ms-flex-align: center
-}
-
-body #banner h1 {
-    font-size: 42px;
-    color: #fff;
-    font-weight: 700;
-    padding-bottom: 20px
-}
-
-body #banner p {
-    font-size: 25px;
-    color: #fff;
-    padding-bottom: 40px;
-    font-weight: 700
-}
-
-@media(max-width:992px) {
-    body #banner p {
-        font-size: 30px
-    }
-}
-
-@media(max-width:768px) {
-    body #banner p {
-        font-size: 25px
-    }
-}
-
-@media(max-width:480px) {
-    body #banner p {
-        font-size: 20px
-    }
-}
-
-body #banner a {
-    font-size: 20px;
-    color: #8AE1FF;
-    background: #fff;
-    display: inline-block;
-    padding: 20px 25px;
-    margin-right: 15px;
-    margin-left: 15px;
-    box-shadow: 2px 1px 5px 0pxs #8AE1FF;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 30px
-}
-
-body #intro .content, body .columns {
-    display: -webkit-box;
-    display: -moz-box
-}
-
-@media(max-width:992px) {
-    body #banner a {
-        font-size: 20px
-    }
-    body .columns {
-        -webkit-box-lines: multiple;
-        -moz-box-lines: multiple;
-        box-lines: multiple;
-        -webkit-flex-wrap: wrap;
-        -moz-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap
-    }
-}
-
-@media(max-width:768px) {
-    body #banner a {
-        font-size: 18px
-    }
-}
-
-@media(max-width:202px) {
-    body #banner a {
-        font-size: 15px
-    }
-}
-
-body #banner a:hover {
-    background: #85e0c2;
-    color: #fff
 }
 
 body .columns {
@@ -1013,15 +887,15 @@ body {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     display: block;
-    font: normal 500 16px / 27px "Open Sans", Helvetica, Arial, Verdana, sans-serif;
-    color: #aeaeae;
-  }
-  
-  .content h1 {
+    font: font: normal 500 16pt / 28px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
+}
+}
+
+.content h1 {
     font: normal 600 22px / 50px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
-  }
-  
-  body #banner a {
+}
+
+body #banner a {
     color: #8AE1FF;
     background: #ffffff;
     display: inline-block;
@@ -1031,44 +905,13 @@ body {
     box-shadow: 2px 1px 5px 0pxs #8AE1FF;
     text-transform: uppercase;
     font: normal 600 20px / 37px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
-  }
-  
-  body header nav ul li a {
+}
+
+body header nav ul li a {
     font: normal 500 18px / 27px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
     color: #223f78;
     display: block;
     
-  }
-
-/*SECTION INTRO*/
-
-body #intro .gridD {
-    height: 300px;
-}
-
-body #intro .content {
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
-    -ms-flex-align: center;
-    height: 300px;
-}
-
-body #intro .content .column h3 {
-    color: #223f78;
-    font-size: 20px;
-    text-align: center;
-    font: normal 600 22px / 27px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
 }
 
 /*SECTION ABOUT*/
@@ -1115,7 +958,7 @@ body #contact p {
 
 body #contact {
     padding: 60px 0 0 0 ;
-    background-color: #223f78;
+    background-color: #007bff;
 }
 
 
@@ -1160,6 +1003,13 @@ body #formulario.obrigado {
     margin-top: 40px
 }
 
+body #formulario.obrigado .msg {
+    display: block;
+}
+
+body #formulario .msg {
+    display: none;
+}
 body #formulario .msg p {
     font-size: 40px;
     color: #fff;
@@ -1194,23 +1044,55 @@ body footer img {
 /*------------------------------NOVO LAYOUT ---------------*/ 
 /*card*/ 
 body #card {
-    color: #ffffff);
+    color: #ffffff;
     padding: 20px 50px;
     margin: 100px 100px;
     font: normal 600 20px / 37px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
     display: block;
-  }
-  .flex-container {
+}
+.flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-  }
+}
 
-  body #banner2 {
+body .card .card-image {
+    width: 100%;
+    height: 230px;
+    display: block;
+    overflow: hidden;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .4s all linear;
+    border-radius: 10px!important;
+}
+
+body .card:hover .card-image {
+    background-size: auto 110%;
+}
+
+body #banner2 {
     height: 200px;
     background: url(../img/banner.jpg) center center no-repeat;
     
 }
 
- 
+.anuncio-vertical {
+    height: calc(100% - 3rem);
+}
+
+.color-primary {
+    color: #009bdb!important;
+}
+
+.bg-primaria {
+    background: #009bdb!important;
+}
+
+@media(max-width: 767px) {
+    .anuncio-vertical {
+        height: 300px;
+    }
+}

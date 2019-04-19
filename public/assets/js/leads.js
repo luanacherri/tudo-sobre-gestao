@@ -60,13 +60,13 @@ function exportToCsv(type, filename, rows) {
 		var finalVal = [];
 		if(type === 'emails') {
 			finalVal = [
-				row.name,
-				row.email
+				row.email,
+				row.name
 			];
 		} else {
 			finalVal = [
-				row.name,
 				row.email,
+				row.name,
 				row.ip,
 				row.type,
 				dateFormat(row.currentDate)
