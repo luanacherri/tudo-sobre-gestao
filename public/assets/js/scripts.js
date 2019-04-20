@@ -59,7 +59,7 @@ var database = firebase.database();
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 			if (target.length) {
 				$('html,body').animate({
-					scrollTop: target.offset().top - 80
+					scrollTop: target.offset().top
 				}, 800);
 				return false;
 			}
@@ -81,7 +81,7 @@ var database = firebase.database();
 
 
 var share_options = {
-	pathname: window.location.pathname,
+	url: window.location,
 	title: document.title,
 	width: 500,
 	height: 450,
@@ -98,17 +98,17 @@ var share_options = {
 function share(social) {
 	switch (social) {
 		case 'facebook':
-			share_options.link = "http://www.facebook.com/share.php?u="+share_options.pathname+"&amp;t="+share_options.title+"'";
+			share_options.link = "http://www.facebook.com/share.php?u="+share_options.url+"&amp;t="+share_options.title+"'";
 		break;
 		case 'twitter':
-			share_options.link = "http://twitter.com/share?text="+share_options.title+"&url="+share_options.pathname;
-			// share_options.link = "http://twitter.com/share?text="+share_options.title+"&amp;url="+share_options.pathname+"'";
+			share_options.link = "http://twitter.com/share?text="+share_options.title+"&url="+share_options.url;
+			// share_options.link = "http://twitter.com/share?text="+share_options.title+"&amp;url="+share_options.url+"'";
 		break;
 		case 'pinterest':
-			share_options.link = "http://pinterest.com/pin/create/button/?url="+share_options.pathname+"&amp;description="+share_options.title+"'";
+			share_options.link = "http://pinterest.com/pin/create/button/?url="+share_options.url+"&amp;description="+share_options.title+"'";
 		break;
 		default:
-			share_options.link = "https://api.whatsapp.com/send?text="+share_options.pathname+" - " + share_options.title;
+			share_options.link = "https://api.whatsapp.com/send?text="+share_options.url+" - " + share_options.title;
 			share_options.target = '_blank';
 			share_options.width = 768;
 			share_options.height = 500;
