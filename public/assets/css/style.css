@@ -935,14 +935,7 @@ body #about h2 {
     clear: both
 }
 
-.gridF {
-    display: flex;
-    align-items: center;
-    max-width: 1420px;
-    height: 100%;
-    padding-right: 30px;
-    padding-left: 30px
-}
+
 
 .text-about,
 .text-contact {
@@ -1104,4 +1097,117 @@ body #banner2 {
     .anuncio-vertical {
         height: 300px;
     }
+}
+
+
+@media(max-width:320px) {
+    body #banner {
+        height: 100%;        
+        display: flex;
+    }
+
+    .gridF {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 320px;
+    }
+
+    body #banner h2 {
+        display: block;
+        font: normal 700 22px / 32px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
+        margin-top: 15px;
+   
+    }
+
+    .text-center {
+        display:flex;
+        flex-direction: column;
+        max-width: 320px;
+        align-items: center;
+    }
+}
+
+@media(max-width:480px) {
+    body #banner {
+        height: 100%;        
+        display: flex;
+    }
+
+    .gridF {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 480px;
+    }
+
+    body #banner h2 {
+        display: block;
+        font: normal 700 22px / 32px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
+        margin-top: 15px;
+   
+    }
+
+    .text-center {
+        display:flex;
+        flex-direction: column;
+        max-width: 480px;
+        align-items: center;
+    }
+
+}
+
+@media(max-width:600px) {
+    body #banner {
+        height: 100%;        
+        display: flex;
+    }
+
+    .gridF {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    body #banner h2 {
+        display: block;
+        font: normal 700 28px / 38px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
+        margin-top: 15px;
+   
+    }
+
+    .text-center {
+        display:flex;
+        flex-direction: column;
+        max-width: 600px;
+        align-items: center;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    body #banner h2 {
+        display: block;
+        font: normal 700 25px / 38px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
+   
+    }
+
+    
+}
+
+@media(max-width:1450px) {
+    body #banner {
+        height: 100%;        
+        display: flex;
+    }
+    
+.gridF {
+    display: flex;
+    align-items: center;
+    max-width: 1420px;
+    height: 100%;
+    }
+
 }
