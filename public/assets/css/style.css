@@ -294,9 +294,18 @@ body header .btn-mobile.active span:last-child {
 }
 
 body #banner {
-    height: 500px;
-    background: url(../img/banner.jpg) center center no-repeat;
-    padding: 0;
+    height: 368px;
+    background: rgb(2,82,117);
+    padding: 30, 0, 0, 0;
+}
+
+
+body #banner h2 {
+    color: #fff;
+    font: normal 700 36px / 40px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
+    margin-bottom: 30px;
+    clear: both;
+    text-align: center;
 }
 
 @media(max-width:992px) {
