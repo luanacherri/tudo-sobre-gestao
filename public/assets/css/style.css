@@ -1211,3 +1211,35 @@ body #banner2 {
     }
 
 }
+
+@media(max-width:1750px) {
+    body #banner {
+        height: 100%;        
+        display: flex;
+    }
+    
+.gridF {
+    display: flex;
+    align-items: center;
+    max-width: 1720px;
+    height: 100%;
+    }
+
+}
+
+
+
+@media(max-width:2000px) {
+    body #banner {
+        height: 100%;        
+        display: flex;
+    }
+    
+.gridF {
+    display: flex;
+    align-items: center;
+    max-width: 2000px;
+    height: 100%;
+    }
+
+}
