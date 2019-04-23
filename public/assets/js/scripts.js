@@ -43,7 +43,7 @@ var database = firebase.database();
  	saveLeads(name, email, date, ip, type);
 
  	if(formulario === 'leads') {
- 		btnpdf.innerHTML= "<a href='assets/download/Tudo-sobre-gestão.pdf' download><p style='font-size: 16px;'><img src='assets/img/downloadoff.png' alt='' style='width: 50px; vertical-align: middle; margin-right: 10px;'/> <br>Baixe seu e-book</p></a>";
+ 		btnpdf.innerHTML= "<a href='assets/download/Ebook-TudoSobreGestao.pdf' download><p style='font-size: 16px;'><img src='assets/img/downloadoff.png' alt='' style='width: 50px; vertical-align: middle; margin-right: 10px;'/> <br>Baixe seu e-book</p></a>";
  	}
 
  	form.parentNode.parentNode.classList.add('obrigado');
