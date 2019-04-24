@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Exportar leads</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+</head>
+<body>
+
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-8 offset-sm-2">
+					<div class="card">
+						<div class="card-header">
+							<h2 class="card-title">Leads</h2>
+						</div>
+						<div class="card-body">
+							<div id="results">
+								<table class="table table-striped" id="leads-table">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Email</th>
+											<th>IP</th>
+											<th>Current date</th>
+											<th>Type</th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+							<div class="row">
+								<div class="col-sm-8">
+									<a href="" id="export-leads" class="export btn btn-primary" name="export-leads" value="leads">Exportar Leads</a>
+									<a href="" id="export-emails" class="export btn btn-default" name="export-emails" value="emails">Exportar e-mails</a>
+								</div>
+								<div class="col-4" id="pagination"></div>
+
+							</div>
+						</div>
+					</div>
+					<div class="card-footer text-muted">
+						<p id="total-rows"></p>
+						<p id="updated-time"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../public/assets/js/jquery-3.4.0.min.js"></script>
+	<script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+	<script src="../public/assets/js/config.js"></script>
+	<script src="leads.js"></script>
+
+</body>
+</html>
