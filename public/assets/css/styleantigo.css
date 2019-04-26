@@ -137,8 +137,7 @@ body.menu-sticky header {
 }
 
 body a {
-    text-decoration: none;
-    color:#003e80;
+    text-decoration: none
 }
 
 body header {
@@ -190,7 +189,7 @@ body header nav ul li {
 body header nav ul li a {
     font-size: 18px;
     color: #85e0c2;
-    font-weight: 800;
+    font-weight: 600;
     text-decoration: none;
     display: block
 }
@@ -296,7 +295,7 @@ body header .btn-mobile.active span:last-child {
 
 body #banner {
     height: 368px;
-    background:#01202d;
+    background: rgb(2,82,117);
     padding: 30, 0, 0, 0;
 }
 
@@ -386,18 +385,17 @@ body input[type=submit] {
     appearance: none;
     border: none;
     box-shadow: none;
-    background: #8AE1FF;
-    color: #01202d;
-    height: 48px;
+    background: #85e0c2;
+    color: #fff;
+    height: 52px;
     width: 120px;
     font-size: 20px;
-    font-weight: 600;
     margin-right: auto;
     margin-left: auto;
     max-width: 120px;
     display: inline-block;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px
 }
 
 @media(max-width:992px) {
@@ -962,7 +960,7 @@ body #contact p {
 
 body #contact {
     padding: 60px 0 0 0 ;
-    background-color: #01202d;      
+    background-color: #007bff;
 }
 
 
@@ -983,7 +981,7 @@ body input[type=text], body input[type=number], body input[type=email], body sel
     margin-left: auto;
     max-width: 300px;
     font-size: 18px;
-    border: 1px solid #01202d;
+    border: 1px solid #27498a;
     border-radius: 5px
 }
 
@@ -1026,7 +1024,7 @@ body #formulario .msg p {
 body footer {
     position: relative;
     z-index: 2;
-    background: #011721;
+    background: #0d1b36;
     padding-top: 60px;
     text-align: center
 }
@@ -1245,48 +1243,3 @@ body #banner2 {
     }
 
 }
-
-.hidden-link {
-    display: block;
-    width: 0; height: 0; overflow: hidden;
-}
-
-.card a  {
-}
-
-
-.cards button {
-background-color: #36c0ff !important; color: #ffffff;
-}
-.cards button:hover {
-
- background-color:#01202d!important;
-}
-
-.card h3  {   
-    font-size:28px;
-}
-
-.card h4 {   
-    font-size:20px;
-    color:#000;
-}
-
-.card h4 a:hover{
-    text-decoration: none !important;
-}
-
-.bg-primary {
-    background-color:#01202d!important;
-}
-
-#article  h2 {
-    font: normal 700 20px / 28px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
-
-}
-
-#article  h4 {
-    font: normal 700 18px / 28px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
-
-}
-

@@ -1254,13 +1254,9 @@ body #banner2 {
 .card a  {
 }
 
+.card a:hover {
 
-.cards button {
-background-color: #36c0ff !important; color: #ffffff;
-}
-.cards button:hover {
 
- background-color:#01202d!important;
 }
 
 .card h3  {   
@@ -1279,14 +1275,3 @@ background-color: #36c0ff !important; color: #ffffff;
 .bg-primary {
     background-color:#01202d!important;
 }
-
-#article  h2 {
-    font: normal 700 20px / 28px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
-
-}
-
-#article  h4 {
-    font: normal 700 18px / 28px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
-
-}
-
